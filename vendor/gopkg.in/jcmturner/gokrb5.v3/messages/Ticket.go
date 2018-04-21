@@ -15,6 +15,7 @@ import (
 	"gopkg.in/jcmturner/gokrb5.v3/krberror"
 	"gopkg.in/jcmturner/gokrb5.v3/pac"
 	"gopkg.in/jcmturner/gokrb5.v3/types"
+	"strings"
 	"time"
 )
 
@@ -187,7 +188,7 @@ func MarshalTicketSequence(tkts []Ticket) (asn1.RawValue, error) {
 func (t *Ticket) DecryptEncPart(keytab keytab.Keytab, sa string) error {
 	var upn []string
 	if sa != "" {
-		upn = []string{sa}
+		upn = strings.SplitN(sa, "/", 2)
 	} else {
 		upn = t.SName.NameString
 	}
