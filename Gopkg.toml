@@ -3,10 +3,6 @@
   version = "1.0.0"
 
 [[constraint]]
-  name = "github.com/go-ldap/ldap"
-  revision = "0776dae456c9f852c74287dfa8475c16401ac9a9"
-
-[[constraint]]
   branch = "master"
   name = "github.com/hashicorp/go-multierror"
 
