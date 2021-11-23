@@ -1,5 +1,6 @@
-# Vault Plugin: Kerberos Auth Backend
-[![Travis Build Status](https://travis-ci.org/wintoncode/vault-plugin-auth-kerberos.svg?branch=master)](https://travis-ci.org/wintoncode/vault-plugin-auth-kerberos)
+# [DEPRECATED] Vault Plugin: Kerberos Auth Backend
+
+> :warning: **This repo is no longer maintained**: [It has been taken over by Hashicorp as an official plugin which you can find here](https://github.com/hashicorp/vault-plugin-auth-kerberos)
 
 This is a standalone backend plugin for use with [Hashicorp Vault](https://www.github.com/hashicorp/vault).
 This plugin allows for users to authenticate with Vault via Kerberos/SPNEGO.
